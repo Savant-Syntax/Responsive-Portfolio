@@ -165,13 +165,35 @@ header {
   letter-spacing: 1;
   border-radius: 10px;
 }
-
 .home-img {
-  width: 600px;
-  height: 600px;
-  background-image: url(./asset/profile01.png);
-  background-size: cover;
+  height: 500px;
+  width: 500px;
+  background-color: #8f9dcb;
+  border-radius: 50%;
+}
+
+.home-img img {
+  height: 500px;
+  width: 500px;
+  background-size: contain;
+  background-position: 50% 50%;
+}
+
+.content {
   position: relative;
+  width: 1150px;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-img img {
+  height: 500px;
+  width: 500px;
+  background-size: cover;
 }
 
 /*=====Common styles for all sections====*/
@@ -179,4 +201,54 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section {
+  position: relative;
+  width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6rem 2rem 2rem;
+}
+
+.sub-section {
+  position: relative;
+  width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6rem 0;
+}
+
+.section-title-01 {
+  font-size: 4.5em;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  background: linear-gradient(to top, transition 0%, var(--first-color) 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.1;
+}
+.section-title-02 {
+  font-size: 2.5em;
+  font-weight: 700;
+  transform: translateY(-80px);
+}
+
+.section-title-02:before {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 5px;
+  right: 0;
+  bottom: 0;
+  background: var(--second-color);
+}
+
+.container {
+  position: relative;
+  flex-direction: column;
 }
